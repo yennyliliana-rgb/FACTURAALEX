@@ -10,11 +10,10 @@
     <style>
         /* --- 1. RESET Y VARIABLES --- */
         :root {
-            --primary: #ac8919;      /* Azul Oscuro (Sidebar) */
-            --accent: #3498db;       /* Azul Claro (Botones/Links) */
+
             --bg: #f4f6f9;           /* Fondo General */
             --white: #ffffff;
-            --success: #27ae60;
+            --success: #7327aeff;
             --danger: #e74c3c;
             --text: #333333;
             --sidebar-width: 260px;
@@ -361,18 +360,3 @@
             }, 2000);
         }
 
-        function updateStats(success) {
-            const totalEl = document.getElementById('kpi-total');
-            const okEl = document.getElementById('kpi-ok');
-            const failEl = document.getElementById('kpi-fail');
-
-            totalEl.innerText = parseInt(totalEl.innerText) + 1;
-            if (success) {
-                okEl.innerText = parseInt(okEl.innerText) + 1;
-            } else {
-                failEl.innerText = parseInt(failEl.innerText) + 1;
-            }
-        }
-    </script>
-</body>
-</html>
