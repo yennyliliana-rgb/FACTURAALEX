@@ -361,18 +361,3 @@
             }, 2000);
         }
 
-        function updateStats(success) {
-            const totalEl = document.getElementById('kpi-total');
-            const okEl = document.getElementById('kpi-ok');
-            const failEl = document.getElementById('kpi-fail');
-
-            totalEl.innerText = parseInt(totalEl.innerText) + 1;
-            if (success) {
-                okEl.innerText = parseInt(okEl.innerText) + 1;
-            } else {
-                failEl.innerText = parseInt(failEl.innerText) + 1;
-            }
-        }
-    </script>
-</body>
-</html>
